@@ -2,17 +2,17 @@
 Programa propio para la práctica dos del lab, aprendiendo a dubujar.
 """
 
-#1º importo la bibloteca que voy a usar
+#---importo la bibloteca que voy a usar
 import arcade
 from arcade.color import COOL_BLACK
 
-#abrir la ventana en la cual estará el dibujo
+#---abrir la ventana en la cual estará el dibujo
 arcade.open_window(1080, 720, "Dibujo de la más alta calidad :D")
 
-# Definir el color de fondo de la ventana
+#---Definir el color de fondo de la ventana
 arcade.set_background_color(arcade.color.CADMIUM_GREEN	)
 
-#insertar las figuras
+#---insertar las figuras
 #iniciar renderizado
 arcade.start_render()
 
@@ -34,13 +34,15 @@ arcade.draw_circle_filled(540,510,40,arcade.color.BLACK)
 arcade.draw_circle_filled(540,510,20,arcade.color.WHITE)
 arcade.draw_circle_filled(540,510,10,arcade.color.RED)
 
-#flecha
-#arcade.draw
+#lanza
+arcade.draw_rectangle_filled(380,340,7,250,arcade.color.BRONZE,45)
+arcade.draw_triangle_filled(484,450,460,436,476,423,arcade.color.DARK_GRAY)
 
+#aro cubre punta lanza
+arcade.draw_circle_outline(540,510,90,arcade.color.WHITE,10)
 
-
-
-
+#termino el renderizado
 arcade.finish_render()
 
+#bucle para mantener la ventana abierta
 arcade.run()
