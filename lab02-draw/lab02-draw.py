@@ -4,7 +4,6 @@ Programa propio para la práctica dos del lab, aprendiendo a dubujar.
 
 #---importo la bibloteca que voy a usar
 import arcade
-from arcade.color import COOL_BLACK
 
 #---abrir la ventana en la cual estará el dibujo
 arcade.open_window(1080, 720, "Dibujo de la más alta calidad :D")
