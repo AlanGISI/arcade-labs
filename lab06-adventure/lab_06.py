@@ -90,7 +90,8 @@ def main():
             print("Vas al este")
             if current_room == p1:
                 current_room = s
-            elif
+            elif current_room == p2:
+
 
 
 
